@@ -1,0 +1,42 @@
+name: calorierecorder
+description: A Flutter application with TensorFlow Lite model to record user's calorie income by image classification.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shared_preferences: ^0.5.4+5
+
+  tflite: ^1.0.5
+  camera: ^0.5.7+4
+  universal_html: ^1.1.4
+  intl: ^0.16.1
+  percent_indicator: ^2.1.3
+  flutter_calendar_carousel: ^1.4.12
+  date_utils: ^0.1.0+3
+  image_picker: ^0.6.5+3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/slash.png
+    - assets/images/avatar.png
+    - assets/images/background.jpg
+    - assets/model/food_label.txt
+    - assets/model/food_model.tflite
+    - assets/model/food_model_128_30.tflite
+    - assets/model/food_label_101.txt
+    - assets/model/food_model_101.tflite
+    - assets/model/food_model_101_quantized.tflite
